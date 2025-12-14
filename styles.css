@@ -124,6 +124,17 @@ h2::after {
     box-shadow: var(--shadow-hover);
 }
 
+.book-cover {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+}
+
 .book-placeholder {
     background: var(--secondary-gradient);
     aspect-ratio: 2/3;
