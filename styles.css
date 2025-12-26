@@ -109,6 +109,12 @@ h2::after {
     flex-wrap: wrap;
 }
 
+.book-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .book-card {
     background: var(--card-background);
     padding: 2rem;
@@ -119,6 +125,7 @@ h2::after {
     width: 350px;
 }
 
+.book-card-link:hover .book-card,
 .book-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: var(--shadow-hover);
@@ -183,7 +190,7 @@ h2::after {
 
 .book-card .author {
     font-style: normal;
-    color: var(--accent-color);
+    color: var(--light-text);
     margin-bottom: 1rem;
     font-weight: 600;
     font-size: 0.95rem;
