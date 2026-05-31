@@ -7,9 +7,28 @@
     <title>Saturn9 Press</title>
     <link rel="icon" type="image/svg+xml" href="assets/s9.svg">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="particles" aria-hidden="true">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <header>
         <div class="container">
             <div class="header-content">
@@ -19,32 +38,49 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <section class="books">
-                <h2>Our Books</h2>
-                <div class="book-grid">
-                    <a href="https://www.amazon.com/Sector-36-Vlad-Riscutia-ebook/dp/B0G832MN9J/" class="book-card-link" target="_blank" rel="noopener noreferrer">
-                        <article class="book-card">
-                            <img src="assets/sector-36-cover.jpg" alt="Sector 36 cover" class="book-cover">
+    <main class="site-main">
+        <section class="books container">
+            <h2 class="section-heading">Our Books</h2>
+            <div class="book-grid">
+                <a href="https://www.amazon.com/Sector-36-Vlad-Riscutia-ebook/dp/B0G832MN9J/" class="book-card-link" target="_blank" rel="noopener noreferrer" aria-label="Buy Sector 36 on Amazon">
+                    <article class="book-card">
+                        <div class="book-cover-frame">
+                            <img src="assets/sector-36-cover.jpg" alt="Sector 36 book cover" class="book-cover">
+                        </div>
+                        <div class="book-copy">
                             <h3>Sector 36</h3>
                             <p class="author">Vlad Riscutia</p>
                             <p class="description">Elena Drake thought she was on a simple extraction mission. But in Sector 36, nothing is simple&mdash;not when an Omega AI is pulling the strings, corporations deploy private armies, and humanity's first contact with aliens has gone catastrophically wrong.</p>
-                        </article>
-                    </a>
-                </div>
-            </section>
+                            <span class="book-cta">Buy on Amazon &rarr;</span>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
 
-            <section class="contact">
-                <h2>Contact</h2>
-                <p>For inquiries, please reach out via <a href="#" id="email-link">email</a>.</p>
-            </section>
-        </div>
+        <section class="contact-card container">
+            <h2 class="contact-heading">Contact</h2>
+            <p>For inquiries, please reach out via <a href="#" id="email-link">email</a>.</p>
+        </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; Saturn9 LLC. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <span>&copy; <a href="https://saturn9.studio/">Saturn9</a> LLC</span>
+            </div>
+            <div class="footer-social">
+                <div class="footer-discord">
+                    <a href="https://discord.gg/2vmaRr5JRD" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/discord.svg" alt="Discord" class="discord-logo">
+                    </a>
+                </div>
+                <div class="footer-x">
+                    <a href="https://x.com/saturn9studio" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/x.svg" alt="X" class="x-logo">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
