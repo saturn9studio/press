@@ -457,8 +457,30 @@ p {
         gap: 20px;
     }
 
-    .hero-bottom p {
+    .site-header nav a,
+    .hero-bottom p,
+    .description,
+    .author,
+    .publisher-copy,
+    .contact-link {
+        font-size: 16px;
+    }
+
+    .text-link,
+    .purchase h4,
+    .substack {
+        font-size: 15px;
+    }
+
+    .cover-caption,
+    .substack-note,
+    .footer {
         font-size: 14px;
+    }
+
+    .eyebrow,
+    .book-genre {
+        font-size: 12px;
     }
 
     .book,
@@ -480,7 +502,7 @@ p {
 
     .store-links a {
         padding-inline: 12px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .books {
