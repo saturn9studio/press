@@ -3,83 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saturn9 Press - Independent Publishing">
-    <title>Saturn9 Press</title>
+    <meta name="description" content="Independent publishing. Discover Sector 36 by Vlad Riscutia, explore the story, and find your preferred bookstore.">
+    <meta property="og:title" content="Saturn9 Press | Independent Publishing">
+    <meta property="og:description" content="New worlds. Lasting stories. Discover books from Saturn9 Press.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://saturn9.press/assets/sector-36-cover.jpg">
+    <title>Saturn9 Press | Independent Publishing</title>
     <link rel="icon" type="image/svg+xml" href="assets/s9.svg">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="particles" aria-hidden="true">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="assets/s9.svg" alt="Saturn9 Press Logo" class="logo">
-                <h1>Saturn9 Press</h1>
-            </div>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header container">
+        <a class="brand" href="./" aria-label="Saturn9 Press home">
+            <img src="assets/s9.svg" alt="" width="48" height="48">
+            <span>Saturn9 <span class="brand-press">Press</span></span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#books">Books</a>
+            <a href="#about">About</a>
+        </nav>
     </header>
 
-    <main class="site-main">
-        <section class="books container">
-            <h2 class="section-heading">Our Books</h2>
-            <div class="book-grid">
-                <a href="https://www.amazon.com/Sector-36-Vlad-Riscutia-ebook/dp/B0G832MN9J/" class="book-card-link" target="_blank" rel="noopener noreferrer" aria-label="Buy Sector 36 on Amazon">
-                    <article class="book-card">
-                        <div class="book-cover-frame">
-                            <img src="assets/sector-36-cover.jpg" alt="Sector 36 book cover" class="book-cover">
-                        </div>
-                        <div class="book-copy">
-                            <h3>Sector 36</h3>
-                            <p class="author">Vlad Riscutia</p>
-                            <p class="description">Elena Drake thought she was on a simple extraction mission. But in Sector 36, nothing is simple&mdash;not when an Omega AI is pulling the strings, corporations deploy private armies, and humanity's first contact with aliens has gone catastrophically wrong.</p>
-                            <span class="book-cta">Buy on Amazon &rarr;</span>
-                        </div>
-                    </article>
-                </a>
+    <main id="main">
+        <section class="hero container" aria-labelledby="hero-title">
+            <p class="eyebrow">Independent publishing</p>
+            <h1 id="hero-title">New worlds.<br><em>Lasting stories.</em></h1>
+            <div class="hero-bottom">
+                <p>Books that take you somewhere else.<br>Stories that stay with you when you return.</p>
+                <a class="text-link" href="#books">Discover our books <span aria-hidden="true">&darr;</span></a>
             </div>
         </section>
 
-        <section class="contact-card container">
-            <h2 class="contact-heading">Contact</h2>
-            <p>For inquiries, please reach out via <a href="#" id="email-link">email</a>.</p>
+        <section class="books container" id="books" aria-labelledby="books-title">
+            <div class="section-heading">
+                <h2 class="eyebrow" id="books-title">Our books</h2>
+            </div>
+            <article class="book" id="sector-36" aria-labelledby="book-title">
+                <div class="book-art">
+                    <div class="book-cover-frame">
+                        <img src="assets/sector-36-cover.jpg" alt="Sector 36 by Vlad Riscutia book cover" class="book-cover" width="1347" height="2000">
+                    </div>
+                    <p class="cover-caption">A novel by Vlad Riscutia</p>
+                </div>
+                <div class="book-copy">
+                    <p class="eyebrow book-genre">Hard science fiction &middot; Military sci-fi</p>
+                    <h3 id="book-title">Sector 36</h3>
+                    <p class="author">Vlad Riscutia</p>
+                    <p class="book-hook">A simple extraction.<br>A sector on the edge of war.</p>
+                    <div class="description">
+                        <p>Elena Drake thought she was on a simple extraction mission. But in Sector 36, nothing is simple&mdash;not when an Omega AI is pulling the strings, corporations deploy private armies, and humanity's first contact with aliens has gone catastrophically wrong.</p>
+                        <p>As the situation escalates into a sector-wide war, Elena's unique condition and training make her the only hope for millions of civilians stranded within the conflict zone.</p>
+                        <p>A story of military tension, misaligned artificial intelligence, and first contact&mdash;and what it means to remain human in a world dominated by corporate interests and inscrutable AIs.</p>
+                    </div>
+                    <div class="purchase" aria-labelledby="purchase-title">
+                        <h4 id="purchase-title">Find your copy</h4>
+                        <div class="store-links">
+                            <a href="https://www.amazon.com/Sector-36-Vlad-Riscutia-ebook/dp/B0G832MN9J/" target="_blank" rel="noopener noreferrer">Amazon <span aria-hidden="true">&nearr;</span></a>
+                            <a href="https://books.apple.com/us/book/sector-36/id6777201539" target="_blank" rel="noopener noreferrer">Apple Books <span aria-hidden="true">&nearr;</span></a>
+                            <a href="https://www.barnesandnoble.com/w/sector-36-vlad-riscutia/1148984778" target="_blank" rel="noopener noreferrer">Barnes &amp; Noble <span aria-hidden="true">&nearr;</span></a>
+                            <a href="https://www.kobo.com/us/en/ebook/sector-36?sid=f0c0ba46-dc6d-47cd-8689-6edc412e0e98" target="_blank" rel="noopener noreferrer">Kobo <span aria-hidden="true">&nearr;</span></a>
+                        </div>
+                    </div>
+                    <aside class="substack" aria-label="Read Sector 36 on Substack">
+                        <p>Start reading before you buy.</p>
+                        <a class="text-link" href="https://sector36.substack.com/p/prologue" target="_blank" rel="noopener noreferrer">Read on Substack <span aria-hidden="true">&nearr;</span></a>
+                        <p class="substack-note">The serialized story, author commentary, and behind-the-scenes notes.</p>
+                    </aside>
+                </div>
+            </article>
+            <article class="book book-upcoming" id="beyond-the-veil" aria-labelledby="beyond-the-veil-title">
+                <div class="book-art">
+                    <div class="book-cover-frame">
+                        <img src="assets/beyond-the-veil-cover.png" alt="Beyond the Veil by Vlad Riscutia book cover" class="book-cover" width="576" height="864" loading="lazy">
+                    </div>
+                    <p class="cover-caption">A novel by Vlad Riscutia</p>
+                </div>
+                <div class="book-copy">
+                    <p class="eyebrow book-genre">Coming in 2027</p>
+                    <h3 id="beyond-the-veil-title">Beyond the Veil</h3>
+                    <p class="author">Vlad Riscutia</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="publisher container" id="about" aria-labelledby="about-title">
+            <div>
+                <h2 id="about-title">About</h2>
+            </div>
+            <div class="publisher-copy" id="contact">
+                <p>Saturn9 Press is the independent publishing imprint of Saturn9.</p>
+                <p>Let's talk stories. Questions about our books or other inquiries?</p>
+                <a class="contact-link" href="#contact" id="email-link">Email <span aria-hidden="true">&nearr;</span></a>
+                <noscript><p>For contact details, visit <a href="https://saturn9.studio/">Saturn9</a>.</p></noscript>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-copyright">
-                <span>&copy; <a href="https://saturn9.studio/">Saturn9</a> LLC</span>
-            </div>
+        <div class="footer-container container">
+            <span>&copy; <a href="https://saturn9.studio/">Saturn9</a> LLC</span>
+            <span class="footer-tagline">Independent publishing. Open possibilities.</span>
             <div class="footer-social">
-                <div class="footer-discord">
-                    <a href="https://discord.gg/2vmaRr5JRD" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/discord.svg" alt="Discord" class="discord-logo">
-                    </a>
-                </div>
-                <div class="footer-x">
-                    <a href="https://x.com/saturn9studio" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/x.svg" alt="X" class="x-logo">
-                    </a>
-                </div>
+                <a href="https://discord.gg/2vmaRr5JRD" target="_blank" rel="noopener noreferrer" aria-label="Saturn9 on Discord">
+                    <img src="assets/discord.svg" alt="" width="22" height="22">
+                </a>
+                <a href="https://x.com/saturn9studio" target="_blank" rel="noopener noreferrer" aria-label="Saturn9 on X">
+                    <img src="assets/x.svg" alt="" width="20" height="20">
+                </a>
             </div>
         </div>
     </footer>
