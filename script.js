@@ -14,3 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
         emailLink.href = 'mailto:' + decoded;
     }
 });
+
+// Mark the nav item for the section the visitor jumped to
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.site-header nav a');
+
+    function markCurrent() {
+        const hash = location.hash || '#books';
+        navLinks.forEach(function(link) {
+            if (link.getAttribute('href') === hash) {
+                link.setAttribute('aria-current', 'location');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', markCurrent);
+    markCurrent();
+});
