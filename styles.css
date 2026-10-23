@@ -123,8 +123,8 @@ a:hover {
 .site-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    gap: var(--s9-space-3);
+    align-items: center;
+    gap: var(--s9-space-3) var(--s9-space-4);
     padding-block: var(--s9-space-4) var(--s9-space-3);
     font-size: 14px;
 }
@@ -137,6 +137,50 @@ a:hover {
 .site-header nav {
     display: flex;
     gap: var(--s9-space-4);
+    margin-left: auto;
+}
+
+/* Day/Night toggle: a line-drawn moon in Day, a sun at Night */
+
+/* The 44px tap area overlaps its neighbors so the icon keeps the nav's word spacing */
+.theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin: -14px -14.5px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--s9-graphite);
+    cursor: pointer;
+}
+
+.theme-toggle[hidden] {
+    display: none;
+}
+
+.theme-toggle:hover {
+    color: var(--s9-ink);
+}
+
+/* Sized to the nav's capital letters; raised 1px to match the links' underline padding */
+.theme-toggle svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    transform: translateY(-1px);
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle[data-mode="night"] .icon-moon {
+    display: none;
+}
+
+.theme-toggle[data-mode="night"] .icon-sun {
+    display: block;
 }
 
 .site-header nav a {
